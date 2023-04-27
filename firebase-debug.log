@@ -86,3 +86,4 @@ Overwriting codebase default...
 [info] 
 [info] ✔  Success! Logged into GitHub as Asinging 
 [info] 
+[debug] [2023-04-27T00:01:09.583Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
