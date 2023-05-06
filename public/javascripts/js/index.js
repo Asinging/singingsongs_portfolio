@@ -74,12 +74,18 @@ let vm = new Vue({
             })
             .then(response => {
                this.isDownloading = false;
-               const blob = new Blob([ response.data ], { type: 'application/pdf' });
+               // const blob = new Blob([ response.data ], { type: 'application/pdf' });
+               // const link = document.createElement('a');
+               // link.href = URL.createObjectURL(blob);
+               // link.download = 'SingingsongsCV';
+               // link.click();
+               // URL.revokeObjectURL(link.href);
+               const url = window.URL.createObjectURL(new Blob([ response.data ]));
                const link = document.createElement('a');
-               link.href = URL.createObjectURL(blob);
-               link.download = 'Singingsongs CV';
+               link.href = url;
+               link.setAttribute('download', 'file.pdf'); // or any other filename you want
+               document.body.appendChild(link);
                link.click();
-               URL.revokeObjectURL(link.href);
             })
             .catch(() => {
                this.isDownloading = false;
