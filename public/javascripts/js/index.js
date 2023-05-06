@@ -7,7 +7,8 @@ let vm = new Vue({
       subject: '',
       emailFrom: '',
       isSending: false,
-      emailSent: false
+      emailSent: false,
+      alerty: {}
    },
    watch: {
       emailSent: {
@@ -52,10 +53,14 @@ let vm = new Vue({
                this.emailBody = '';
                this.emailFrom = '';
                this.subject = '';
-               console.log(response.data);
+               this.alerty.title = 'Email Successfully sent!';
+               this.alerty.body = 'We will bet back to you in less than no time';
             })
             .catch(error => {
                this.isSending = false;
+               this.emailSent = true;
+               this.alerty.title = 'Ouch!!!';
+               this.alerty.body = 'There was an error while sending email >>>';
                console.error(error);
             });
       },

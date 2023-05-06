@@ -368,7 +368,7 @@
                     <h6 class="section-title mb-4">Get In Touch</h6>
                     <form @submit.prevent methods="post">
                         <div v-if="emailSent"class="alert alert-primary alert-dismissible fade show" role="alert">
-                    <strong>Email Successfully sent!</strong> <br>We will bet back to you in less than no time
+                    <strong>{{alerty.title}}</strong> <br>{{alerty.body}}
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                      <span aria-hidden="true">&times;</span>
                     </button>

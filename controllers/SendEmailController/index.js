@@ -16,7 +16,6 @@ exports.sendEmail = async (req, res, next) => {
          status: 200
       });
    } catch (err) {
-      console.log(err);
-      res.send('Error');
+      res.status(500).send('Something broke!');
    }
 };
