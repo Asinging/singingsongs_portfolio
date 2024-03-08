@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Singingsongs Eje Sunday Cv">
     <meta name="Singingsongs" content="Dsongs">
     <title>Singingsongs | Portfolio</title>
 
-      
+
     <link rel="apple-touch-icon" sizes="180x180" href="/public_html/assets/imgs/favicons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/public_html/assets/imgs/favicons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/public_html/assets/imgs/favicons/favicon-16x16.png">
-<link rel="manifest" href="/public_html/assets/imgs/favicons/site.webmanifest">
+    <link rel="icon" type="image/png" sizes="32x32" href="/public_html/assets/imgs/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/public_html/assets/imgs/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/public_html/assets/imgs/favicons/site.webmanifest">
     <!-- font icons -->
     <link rel="stylesheet" href="public_html/assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + Steller main styles -->
-	<link rel="stylesheet" href="public_html/assets/css/steller.css">
+    <link rel="stylesheet" href="public_html/assets/css/steller.css">
 </head>
+
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     <!-- Page navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
@@ -36,440 +38,437 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#service">Service</a>
-                    </li>                   
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#testmonial">Testmonial</a>
                     </li>
-                   
-                        <a class="nav-link" href="#contact">Contact</a>
+
+                    <a class="nav-link" href="#contact">Contact</a>
                     </li>
                     <!-- <li class="nav-item">
                         <a class="- btn btn-primary rounded ml-4" href="public_html/components.html">Copmonents</a>
                     </li> -->
                 </ul>
             </div>
-        </div>          
+        </div>
     </nav>
     <!-- End of page navibation -->
     <div class="wrapper" id="app">
 
 
-  
-   <!-- Page Header -->
-    <header class="header" id="home">
-        <div class="container">
-            <div class="infos">
-                <h6 class="subtitle">hello,I'm</h6>
-                <h6 class="title">Sunday Eje </h6>
-            
-                <p>Software Engineer</p>
 
-                <div class="buttons pt-3">
-                    <button class="btn btn-secondary rounded"> <a class="" href="#contact">HIRE ME</a></button>
-                    <button  class="btn btn-dark rounded" @click="downloadDoc" :disabled="isDownloading">DOWNLOAD CV   <div v-if="isDownloading" class="spinner-border spinner-border-sm pr-2 " role="status">
+        <!-- Page Header -->
+        <header class="header" id="home">
+            <div class="container">
+                <div class="infos">
+                    <h6 class="subtitle">hello,I'm</h6>
+                    <h6 class="title">Sunday Eje </h6>
+
+                    <p>Software Engineer</p>
+
+                    <div class="buttons pt-3">
+                        <button class="btn btn-secondary rounded"> <a class="" href="#contact">HIRE ME</a></button>
+                        <button class="btn btn-dark rounded" @click="downloadDoc" :disabled="isDownloading">DOWNLOAD CV   <div v-if="isDownloading" class="spinner-border spinner-border-sm pr-2 " role="status">
   <span class="sr-only">Loading...</span>
 </div></button>
-                </div>      
-
-                <div class="socials mt-4">
-                    <a class="social-item" href="https://www.facebook.com/singing.songs.963"><i class="ti-facebook"></i></a>
-                    <a class="social-item" href="ejesunday2@gmail.com"><i class="ti-google"></i></a>
-                    <a class="social-item" href="https://github.com/asinging"><i class="ti-github"></i></a>
-                    <a class="social-item" href="https://twitter.com/eje_sunay"><i class="ti-twitter"></i></a>
-                </div>
-            </div>              
-            <div class="img-holder">
-                <img src="public_html/assets/imgs/singingsongs.png" alt="Singingsongs" height="700">
-            </div>      
-        </div>  
-
-        <!-- Header-widget -->
-        <div class="widget">
-            <div class="widget-item">
-                <h2>35</h2>
-                <p>Happy Clients</p>
-            </div>
-            <div class="widget-item">
-                <h2>120</h2>
-                <p>Project Completed</p>
-            </div>
-            <div class="widget-item">
-                <h2>65</h2>
-                <p>Awards Won</p>
-            </div>
-        </div>
-    </header>
-    <!-- End of Page Header -->
-    
-    <!-- About section -->
-    <section id="about" class="section mt-3">
-        <div class="container mt-5">
-            <div class="row text-center text-md-left">
-                <div class="col-md-3">
-                    <img src="public_html/assets/imgs/2.jpg" alt="" class="img-thumbnail mb-4">
-                </div>
-                <div class="pl-md-4 col-md-9">
-                    <h6 class="title">Sunday Eje Singingsongs</h6>
-                    <p class="subtitle">Software Engineer !</p>
-                    <p>As a seasoned software developer with 5+ years of experience, I have  passion for creating innovative solutions that solve complex digital problems,  I work with serveral technologies the industry provides such as HTML, CSS, Javascripts, Vue.js, Reactjs, nodeJs, PHP, etc. </p>
-                    <p>I have built couple of applications, APIs and micro services using modern industry methodologis such as agile, pick and drop etc. 
-                        I am dedicated to staying up-to-date with the latest trends and technologies and i am super excited about any opportunity to contribute my skills to a great team or a collaboration with any individual</p>
-                    <button class="btn btn-primary rounded mt-3" @click="downloadDoc" :disabled="isDownloading">DOWNLOAD CV <div v-if="isDownloading" class="spinner-border spinner-border-sm pr-2 " role="status">
-  <span class="sr-only">Loading...</span>
-</div></button>                   
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Service section -->
-    <section id="service" class="section">
-        <div class="container text-center">
-            <h6 class="subtitle">Service</h6>
-            <h6 class="section-title mb-4">What I Do</h6>
-            <p class="mb-5 pb-4">I am a Software Engineer, that is, I Design and build robust  Software applications/solutions for businesses and individual<br> that help make their day to day activities seamless and efficient, accurate and effective </p>
-
-            <div class="row">
-                <div class="col-sm-6 col-md-3 mb-4">
-                    <div class="custom-card card border">
-                        <div class="card-body">
-                            <i class="icon ti-crown"></i>
-                            <h5>UI/UX Design</h5>
-                        </div>
                     </div>
-                </div>
-                <div class="col-sm-6 col-md-3 mb-4">
-                    <div class="custom-card card border">
-                        <div class="card-body">
-                            <i class="icon ti-desktop"></i>
-                            <h5>Web Design</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3 mb-4">
-                    <div class="custom-card card border">
-                        <div class="card-body">
-                            <i class="icon ti-mobile"></i>
-                            <h5>Development</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3 mb-4">
-                    <div class="custom-card card border">
-                        <div class="card-body">
-                            <i class="icon ti-bar-chart"></i>
-                            <h5>Server Admin.</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End of Sectoin -->
 
-    <!-- Skills section -->
-    <section class="section">
-        <div class="container text-center">
-            <h6 class="subtitle">Skills</h6>
-            <h6 class="section-title mb-4">Why Choose me</h6>
-            <p class="mb-5 pb-4">I have satified all my clients on time. <br> Execellent Job delivery has been my watch words. I love what I do and I do it with a sense of obligation for services</p>
-
-            <div class="row text-left">
-                <div class="col-sm-6">
-                    <h6 class="mb-3">UI/UX Design</h6>
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 89%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>89%</span></div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <h6 class="mb-3">Web Design</h6>
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 83%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>83%</span></div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <h6 class="mb-3">Software Development</h6>
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>95%</span></div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <h6 class="mb-3">Server Adinistration</h6>
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>90%</span></div>
-                    </div>
-                </div>
-            </div>  
-        </div>
-    </section>
-    <!-- End of Skills sections -->
-
-    <!-- Portfolio section -->
-    <section id="portfolio" class="section">
-        <div class="container text-center">
-            <h6 class="subtitle">Portfolio</h6>
-            <h6 class="section-title mb-4">Check My Wonderful Works</h6>
-            <p class="mb-5 pb-4">some of the cool projects i have done across board, utilising my skills </p>
-
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="img-wrapper">
-                        <img src="public_html/assets/imgs/quickLinks.png" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>A Quick navigation card for Inventory manager</h5>
-                               
-                            </div>  
-                        </div>
-                    </div>
-                    <div class="img-wrapper">
-                        <img src="public_html/assets/imgs/dashboard.png" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Inventory management system</h5>
-                              
-                            </div>                              
-                        </div>
-                    </div>                  
-                </div>
-                <div class="col-sm-4">
-                    <div class="img-wrapper">
-                        <img src="public_html/assets/imgs/barcode.png" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Barcode Generator</h5>
-                                
-                            </div>  
-                        </div>
-                    </div>
-                    <div class="img-wrapper">
-                        <img src="public_html/assets/imgs/pos.png" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Point of Sales</h5>
-                               
-                            </div>                              
-                        </div>
-                    </div>                  
-                </div>
-                <div class="col-sm-4">
-                    <div class="img-wrapper">
-                        <img src="public_html/assets/imgs/portfolio.png" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Port folio Project</h5>
-                               
-                            </div>  
-                        </div>
-                    </div>
-                    <div class="img-wrapper">
-                        <img src="public_html/assets/imgs/accounting.png" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Financial Accounting System</h5>
-                               
-                            </div>                              
-                        </div>
-                    </div>                  
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!-- End of portfolio section -->
-
-    <!-- Testmonial Section -->
-    <section id="testmonial" class="section">
-        <div class="container text-center">
-            <h6 class="subtitle">Testmonial</h6>
-            <h6 class="section-title mb-4">What People Say About Me</h6>
-            <p class="mb-5 pb-4">He is a reliable plug, always coming through whenever needed!.</p>
-
-
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="card testmonial-card border">
-                            <div class="card-body">
-                                <img src="public_html/assets/imgs/avatar-1.jpg" alt="">
-                                <p>The solution has helped me to automate many of my tasks and has saved me hours of manual work. I highly recommend this software solution to anyone looking to streamline their processes and save time.</p>
-                                <h1 class="title">Emma Relly</h1>
-                                <h1 class="subtitle">Accounter</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card testmonial-card border">
-                            <div class="card-body">
-                                <img src="public_html/assets/imgs/avatar-2.jpg" alt="">
-                                <p>I was initially skeptical about using this software solution, but after giving it a try, I am blown away by its capabilities. It is incredibly powerful, yet easy to use, making it an excellent choice for both novice and experienced users. The solution has helped me to automate many of my tasks and has saved me hours of manual work. I highly recommend this software solution to anyone looking to streamline their processes and save time.</p>
-                                <h1 class="title">Joe Bertin</h1>
-                                <h1 class="subtitle">POS Attendant</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card testmonial-card border">
-                            <div class="card-body">
-                                <img src="public_html/assets/imgs/avatar-3.jpg" alt="">
-                                <p>I've been using this software solution for a few months now, and I couldn't be happier with it. It has exceeded my expectations in every way, from its functionality to its performance. The customer support team has also been extremely helpful and responsive whenever I've had a question or issue. I highly recommend this solution to anyone in need of top-quality software.</p>
-                                <h1 class="title">Dan Tombrown</h1>
-                                <h1 class="subtitle">Stock taker</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End of testmonial section -->
-
-
-    <!-- Hire me section -->
-    <section class="bg-gray p-0 section">
-        <div class="container">
-            <div class="card bg-primary">
-                <div class="card-body text-light">
-                    <div class="row align-items-center">
-                        <div class="col-sm-9 text-center text-sm-left">
-                            <h5 class="mt-3">Hire Me For Your Project</h5>
-                            <p class="mb-3">You can trust one whose work can speak for him.</p>
-                        </div>
-                        <div class="col-sm-3 text-center text-sm-right">
-                            <button class="btn btn-light rounded"><a class="nav-link" href="#contact">Hire Me!</a></button>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-        </div>
-    </section>      
-    <!-- End od Hire me section. -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="position-relative section">
-        <div class="container text-center" >
-            <h6 class="subtitle">Contact</h6>
-            <h6 class="section-title mb-4">Get In Touch With Me</h6>
-            <p class="mb-5 pb-4">I am available for contact anytime</p>
-
-            <div class="contact text-left">
-                <div class="form">
-                    <h6 class="subtitle">Available 24/7</h6>
-                    <h6 class="section-title mb-4">Get In Touch</h6>
-                    <form @submit.prevent methods="post">
-                        <div v-if="emailSent"class="alert alert-primary alert-dismissible fade show" role="alert">
-                    <strong>{{alerty.title}}</strong> <br>{{alerty.body}}
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                     <span aria-hidden="true">&times;</span>
-                    </button>
-                        </div>
-                        <div class="form-group">
-                              <input type="text" class="form-control" id="fulname" 
-                            
-                              aria-describedby="fulnameHelp" placeholder="Full Name (Optional)"
-                              v-model="fullName" >
-                        </div>
-
-                             <div class="form-group">
-
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" 
-                            v-model="emailFrom" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" 
-                           
-                            class="form-control" id="subject" placeholder="Subject" 
-                             v-model="subject"
-                            required
-                            >
-                        </div>
-                        <div class="form-group">
-                            <textarea name="contact-message" id="" cols="30" rows="5" class="form-control" 
-                            placeholder="Message"
-                            v-model="emailBody"></textarea>
-                        </div>
-                        <button :disabled="isSending" type="submit" class="btn btn-primary btn-block rounded w-lg" @click="submitForm">Send Message
-                            <div v-if="isSending" class="spinner-border spinner-border-sm pr-2 " role="status">
-  <span class="sr-only">Loading...</span>
-</div>
-                        </button>
-                    </form>
-                </div>
-                <div class="contact-infos">
-                    <div class="item">
-                        <i class="ti-location-pin"></i>
-                        <div class="">
-                            <h5>Location</h5>
-                            <p> No. 4 str. Rumuorosi Port Harcort, Nigeria</p>
-                        </div>                          
-                    </div>
-                    <div class="item">
-                        <i class="ti-mobile"></i>
-                        <div>
-                            <h5>Phone Number</h5>
-                            <p>09037228349</p>
-                        </div>                          
-                    </div>
-                    <div class="item">
-                        <i class="ti-email"></i>
-                        <div class="mb-0">
-                            <h5>Email Address</h5>
-                            <p>ejesunday2@gmail.com</p>
-                        </div>
-                    </div>
-                </div>                  
-            </div>
-        </div>  
-        <div id="map">
-            <iframe src="https://snazzymaps.com/embed/61257"></iframe>
-        </div>      
-    </section>
-    <!-- End of Contact Section -->
-    </section>
-
-    
-
- 
-
-    <!-- Page Footer -->
-    <footer class="page-footer">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-sm-6">
-                    <p>Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a href="javascript:void(0)" target="_blank">DSongDevs</a></p>
-                </div>
-                <div class="col-sm-6">
-                    <div class="socials">
+                    <div class="socials mt-4">
                         <a class="social-item" href="https://www.facebook.com/singing.songs.963"><i class="ti-facebook"></i></a>
                         <a class="social-item" href="ejesunday2@gmail.com"><i class="ti-google"></i></a>
                         <a class="social-item" href="https://github.com/asinging"><i class="ti-github"></i></a>
                         <a class="social-item" href="https://twitter.com/eje_sunay"><i class="ti-twitter"></i></a>
                     </div>
                 </div>
+                <div class="img-holder">
+                    <img src="public_html/assets/imgs/singingsongs.png" alt="Singingsongs" height="700">
+                </div>
             </div>
-        </div>
-    </footer> 
-    <!-- End of page footer -->
-	
-	<!-- core  -->
-    <script src="public_html/assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="public_html/assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-    <!-- bootstrap 3 affix -->
-	<script src="public_html/assets/vendors/bootstrap/bootstrap.affix.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14"></script>
-     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-    <!-- steller js -->
-    <script src="public_html/assets/js/steller.js"></script>
-    <script src="javascripts/js/index.js"></script>
+            <!-- Header-widget -->
+            <div class="widget">
+                <div class="widget-item">
+                    <h2>35</h2>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="widget-item">
+                    <h2>120</h2>
+                    <p>Project Completed</p>
+                </div>
+                <div class="widget-item">
+                    <h2>65</h2>
+                    <p>Awards Won</p>
+                </div>
+            </div>
+        </header>
+        <!-- End of Page Header -->
+
+        <!-- About section -->
+        <section id="about" class="section mt-3">
+            <div class="container mt-5">
+                <div class="row text-center text-md-left">
+                    <div class="col-md-3">
+                        <img src="public_html/assets/imgs/2.jpg" alt="" class="img-thumbnail mb-4">
+                    </div>
+                    <div class="pl-md-4 col-md-9">
+                        <h6 class="title">Sunday Eje Singingsongs</h6>
+                        <p class="subtitle">Software Engineer !</p>
+                        <p>As a seasoned software developer with 7+ years of experience, I have passion for creating innovative solutions that solve complex digital problems, I have bee privileged to have worked with serveral teams and technologies the industry
+                            provides such as HTML, CSS, Javascripts, Vue.js, Reactjs, nodeJs, PHP, nestjs, etc. </p>
+                        <p>I have built couple of applications, APIs and micro services using modern industry methodologis such as agile, pick and drop etc. I am dedicated to staying up-to-date with the latest trends and technologies and i am super excited
+                            about any opportunity to contribute my skills to a great team or a collaboration with any individual</p>
+                        <button class="btn btn-primary rounded mt-3" @click="downloadDoc" :disabled="isDownloading">DOWNLOAD CV <div v-if="isDownloading" class="spinner-border spinner-border-sm pr-2 " role="status">
+  <span class="sr-only">Loading...</span>
+</div></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service section -->
+        <section id="service" class="section">
+            <div class="container text-center">
+                <h6 class="subtitle">Service</h6>
+                <h6 class="section-title mb-4">What I Do</h6>
+                <p class="mb-5 pb-4">I am a Software Engineer, that is, I Design and build robust Software applications/solutions for businesses and individual<br> that help make their day to day activities seamless and efficient, accurate and effective </p>
+
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 mb-4">
+                        <div class="custom-card card border">
+                            <div class="card-body">
+                                <i class="icon ti-crown"></i>
+                                <h5>UI/UX Design</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 mb-4">
+                        <div class="custom-card card border">
+                            <div class="card-body">
+                                <i class="icon ti-desktop"></i>
+                                <h5>Web Design</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 mb-4">
+                        <div class="custom-card card border">
+                            <div class="card-body">
+                                <i class="icon ti-mobile"></i>
+                                <h5>Development</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 mb-4">
+                        <div class="custom-card card border">
+                            <div class="card-body">
+                                <i class="icon ti-bar-chart"></i>
+                                <h5>Server Admin.</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Sectoin -->
+
+        <!-- Skills section -->
+        <section class="section">
+            <div class="container text-center">
+                <h6 class="subtitle">Skills</h6>
+                <h6 class="section-title mb-4">Why Choose me</h6>
+                <p class="mb-5 pb-4">I have satified all my clients on time. <br> Execellent Job delivery has been my watch words. I love what I do and I do it with a sense of obligation for services</p>
+
+                <div class="row text-left">
+                    <div class="col-sm-6">
+                        <h6 class="mb-3">UI/UX Design</h6>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 89%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>89%</span></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <h6 class="mb-3">Web Design</h6>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 83%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>83%</span></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <h6 class="mb-3">Software Development</h6>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>95%</span></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <h6 class="mb-3">Server Adinistration</h6>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>90%</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Skills sections -->
+
+        <!-- Portfolio section -->
+        <section id="portfolio" class="section">
+            <div class="container text-center">
+                <h6 class="subtitle">Portfolio</h6>
+                <h6 class="section-title mb-4">Check My Wonderful Works</h6>
+                <p class="mb-5 pb-4">some of the cool projects i have done across board, utilising my skills </p>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="img-wrapper">
+                            <img src="public_html/assets/imgs/quickLinks.png" alt="">
+                            <div class="overlay">
+                                <div class="overlay-infos">
+                                    <h5>A Quick navigation card for Inventory manager</h5>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="img-wrapper">
+                            <img src="public_html/assets/imgs/dashboard.png" alt="">
+                            <div class="overlay">
+                                <div class="overlay-infos">
+                                    <h5>Inventory management system</h5>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="img-wrapper">
+                            <img src="public_html/assets/imgs/barcode.png" alt="">
+                            <div class="overlay">
+                                <div class="overlay-infos">
+                                    <h5>Barcode Generator</h5>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="img-wrapper">
+                            <img src="public_html/assets/imgs/pos.png" alt="">
+                            <div class="overlay">
+                                <div class="overlay-infos">
+                                    <h5>Point of Sales</h5>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="img-wrapper">
+                            <img src="public_html/assets/imgs/portfolio.png" alt="">
+                            <div class="overlay">
+                                <div class="overlay-infos">
+                                    <h5>Port folio Project</h5>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="img-wrapper">
+                            <img src="public_html/assets/imgs/accounting.png" alt="">
+                            <div class="overlay">
+                                <div class="overlay-infos">
+                                    <h5>Financial Accounting System</h5>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- End of portfolio section -->
+
+        <!-- Testmonial Section -->
+        <section id="testmonial" class="section">
+            <div class="container text-center">
+                <h6 class="subtitle">Testmonial</h6>
+                <h6 class="section-title mb-4">What People Say About Me</h6>
+                <p class="mb-5 pb-4">He is a reliable plug, always coming through whenever needed!.</p>
+
+
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card testmonial-card border">
+                                <div class="card-body">
+                                    <img src="public_html/assets/imgs/avatar-1.jpg" alt="">
+                                    <p>The solution has helped me to automate many of my tasks and has saved me hours of manual work. I highly recommend this software solution to anyone looking to streamline their processes and save time.</p>
+                                    <h1 class="title">Emma Relly</h1>
+                                    <h1 class="subtitle">Accounter</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card testmonial-card border">
+                                <div class="card-body">
+                                    <img src="public_html/assets/imgs/avatar-2.jpg" alt="">
+                                    <p>I was initially skeptical about using this software solution, but after giving it a try, I am blown away by its capabilities. It is incredibly powerful, yet easy to use, making it an excellent choice for both novice
+                                        and experienced users. The solution has helped me to automate many of my tasks and has saved me hours of manual work. I highly recommend this software solution to anyone looking to streamline their processes and
+                                        save time.</p>
+                                    <h1 class="title">Joe Bertin</h1>
+                                    <h1 class="subtitle">POS Attendant</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card testmonial-card border">
+                                <div class="card-body">
+                                    <img src="public_html/assets/imgs/avatar-3.jpg" alt="">
+                                    <p>I've been using this software solution for a few months now, and I couldn't be happier with it. It has exceeded my expectations in every way, from its functionality to its performance. The customer support team has
+                                        also been extremely helpful and responsive whenever I've had a question or issue. I highly recommend this solution to anyone in need of top-quality software.</p>
+                                    <h1 class="title">Dan Tombrown</h1>
+                                    <h1 class="subtitle">Stock taker</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of testmonial section -->
+
+
+        <!-- Hire me section -->
+        <section class="bg-gray p-0 section">
+            <div class="container">
+                <div class="card bg-primary">
+                    <div class="card-body text-light">
+                        <div class="row align-items-center">
+                            <div class="col-sm-9 text-center text-sm-left">
+                                <h5 class="mt-3">Hire Me For Your Project</h5>
+                                <p class="mb-3">You can trust one whose work can speak for him.</p>
+                            </div>
+                            <div class="col-sm-3 text-center text-sm-right">
+                                <button class="btn btn-light rounded"><a class="nav-link" href="#contact">Hire Me!</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End od Hire me section. -->
+
+        <!-- Contact Section -->
+        <section id="contact" class="position-relative section">
+            <div class="container text-center">
+                <h6 class="subtitle">Contact</h6>
+                <h6 class="section-title mb-4">Get In Touch With Me</h6>
+                <p class="mb-5 pb-4">I am available for contact anytime</p>
+
+                <div class="contact text-left">
+                    <div class="form">
+                        <h6 class="subtitle">Available 24/7</h6>
+                        <h6 class="section-title mb-4">Get In Touch</h6>
+                        <form @submit.prevent methods="post">
+                            <div v-if="emailSent" class="alert alert-primary alert-dismissible fade show" role="alert">
+                                <strong>{{alerty.title}}</strong> <br>{{alerty.body}}
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                    </button>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="fulname" aria-describedby="fulnameHelp" placeholder="Full Name (Optional)" v-model="fullName">
+                            </div>
+
+                            <div class="form-group">
+
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" v-model="emailFrom" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="subject" placeholder="Subject" v-model="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="contact-message" id="" cols="30" rows="5" class="form-control" placeholder="Message" v-model="emailBody"></textarea>
+                            </div>
+                            <button :disabled="isSending" type="submit" class="btn btn-primary btn-block rounded w-lg" @click="submitForm">Send Message
+                            <div v-if="isSending" class="spinner-border spinner-border-sm pr-2 " role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+                        </button>
+                        </form>
+                    </div>
+                    <div class="contact-infos">
+                        <div class="item">
+                            <i class="ti-location-pin"></i>
+                            <div class="">
+                                <h5>Location</h5>
+                                <p> No. 4 str. Rumuorosi Port Harcort, Nigeria</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="ti-mobile"></i>
+                            <div>
+                                <h5>Phone Number</h5>
+                                <p>09037228349</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="ti-email"></i>
+                            <div class="mb-0">
+                                <h5>Email Address</h5>
+                                <p>ejesunday2@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="map">
+                <iframe src="https://snazzymaps.com/embed/61257"></iframe>
+            </div>
+        </section>
+        <!-- End of Contact Section -->
+        </section>
+
+
+
+
+
+        <!-- Page Footer -->
+        <footer class="page-footer">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-sm-6">
+                        <p>Copyright
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script> &copy; <a href="javascript:void(0)" target="_blank">DSongDevs</a></p>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="socials">
+                            <a class="social-item" href="https://www.facebook.com/singing.songs.963"><i class="ti-facebook"></i></a>
+                            <a class="social-item" href="ejesunday2@gmail.com"><i class="ti-google"></i></a>
+                            <a class="social-item" href="https://github.com/asinging"><i class="ti-github"></i></a>
+                            <a class="social-item" href="https://twitter.com/eje_sunay"><i class="ti-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End of page footer -->
+
+        <!-- core  -->
+        <script src="public_html/assets/vendors/jquery/jquery-3.4.1.js"></script>
+        <script src="public_html/assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+        <!-- bootstrap 3 affix -->
+        <script src="public_html/assets/vendors/bootstrap/bootstrap.affix.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+        <!-- steller js -->
+        <script src="public_html/assets/js/steller.js"></script>
+        <script src="javascripts/js/index.js"></script>
 
 </body>
+
 </html>
