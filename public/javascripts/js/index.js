@@ -8,6 +8,7 @@ let vm = new Vue({
         emailFrom: '',
         isSending: false,
         emailSent: false,
+        buttonIndex: 0,
         alerty: {}
     },
     watch: {
@@ -64,7 +65,9 @@ let vm = new Vue({
                     console.error(error);
                 });
         },
-        downloadDoc() {
+        downloadDoc(index) {
+            this.buttonIndex = index;
+
             this.isDownloading = true;
 
             axios

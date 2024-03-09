@@ -71,7 +71,8 @@
 
                     <div class="buttons pt-3">
                         <button class="btn btn-secondary rounded"> <a class="" href="#contact">HIRE ME</a></button>
-                        <button class="btn btn-dark rounded" @click="downloadDoc" :disabled="isDownloading">DOWNLOAD CV   <div v-if="isDownloading" class="spinner-border spinner-border-sm pr-2 " role="status">
+                        <button class="btn btn-dark rounded" @click="downloadDoc(1)" :disabled="isDownloading && buttonIndex == 2">DOWNLOAD CV   
+                            <div v-if="!isDownloading && buttonIndex == 2" class="spinner-border spinner-border-sm pr-2 " role="status">
   <span class="sr-only">Loading...</span>
 </div></button>
                     </div>
@@ -80,11 +81,11 @@
                         <a class="social-item" title="Connect with me on facebook" href="https://www.facebook.com/singing.songs.963"><i class="ti-facebook"></i></a>
                         <a class="social-item" title="Connect with me on linkedin" href="https://www.linkedin.com/in/sunday-singingsongs-eje-9b4014216/"><i class="ti-linkedin"></i></a>
                         <a class="social-item" title="Check me out on github" href="https://github.com/asinging"><i class="ti-github"></i></a>
-                        <a class="social-item" title="Follow me with on X" href="https://twitter.com/eje_sunay"><i class="ti-x"></i></a>
+                        <a class="social-item" title="Follow me with on X" href="https://twitter.com/eje_sunay"><i class="ti-twitter"></i></a>
                     </div>
                 </div>
                 <div class="img-holder">
-                    <img src="public_html/assets/imgs/singingsongs.png" alt="Singingsongs" height="900">
+                    <img src="public_html/assets/imgs/singingsongs.png" alt="Singingsongs" height="750">
                 </div>
             </div>
 
@@ -128,7 +129,7 @@
                             that exceed client expectations while meeting tight deadlines. Seeking new challenges and opportunities to contribute expertise in software development, harnessing a blend of technical acumen and creative problem-solving to
                             propel projects to success.</p>
 
-                        <button class="btn btn-primary rounded mt-3" @click="downloadDoc" :disabled="isDownloading">DOWNLOAD CV <div v-if="isDownloading" class="spinner-border spinner-border-sm pr-2 " role="status">
+                        <button class="btn btn-primary rounded mt-3" @click="downloadDoc(2)" :disabled="isDownloading && buttonIndex == 2">DOWNLOAD CV <div v-if="isDownloading && buttonIndex == 2" class="spinner-border spinner-border-sm pr-2 " role="status">
   <span class="sr-only">Loading...</span>
 </div></button>
                     </div>
@@ -222,7 +223,7 @@
         <section id="portfolio" class="section">
             <div class="container text-center">
                 <h6 class="subtitle">Portfolio</h6>
-                <h6 class="section-title mb-4">Check My Wonderful Works</h6>
+                <h6 class="section-title mb-4">Check My awesome Works</h6>
                 <p class="mb-5 pb-4">some of the cool projects i have done across board, utilising my skills </p>
 
                 <div class="row">
