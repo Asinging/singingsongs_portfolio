@@ -29,7 +29,7 @@ let vm = new Vue({
                 if (val) {
                     setTimeout(() => {
                         this.isDownloadError = false;
-                    }, 300);
+                    }, 3000);
                 }
             }
         }
