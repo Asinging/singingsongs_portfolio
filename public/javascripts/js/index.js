@@ -8,6 +8,7 @@ let vm = new Vue({
         emailFrom: '',
         isSending: false,
         emailSent: false,
+        isDownloadError: false,
         buttonIndex: 0,
         alerty: {}
     },
@@ -68,6 +69,7 @@ let vm = new Vue({
         downloadDoc(index) {
             this.buttonIndex = index;
 
+            this.isDownloadError = false;
             this.isDownloading = true;
 
             axios
@@ -87,6 +89,8 @@ let vm = new Vue({
                 })
                 .catch(err => {
                     console.log(err);
+                    this.isDownloadError = true;
+                    this.alerty.body = 'Error downloading CV';
                     this.isDownloading = false;
                     console.error;
                 });

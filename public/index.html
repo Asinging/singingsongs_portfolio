@@ -72,6 +72,12 @@
                     <p>Software Engineer</p>
 
                     <div class="buttons pt-3">
+                        <div v-if="isDownloadError" class="alert alert-primary alert-dismissible fade show" role="alert">
+                            <br>{{alerty.body}}
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                         <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
                         <button class="btn btn-secondary rounded"> <a class="" href="#contact">HIRE ME</a></button>
                         <button class="btn btn-dark rounded" @click="downloadDoc(1)" :disabled="isDownloading && buttonIndex == 2">DOWNLOAD CV   
                             <div v-if="!isDownloading && buttonIndex == 2" class="spinner-border spinner-border-sm pr-2 " role="status">
@@ -131,7 +137,12 @@
                         <p> Passionate about continuous learning, with a solid foundation in software engineering principles, algorithms, and data structures. Proactive problem-solver with a keen eye for detail, committed to delivering software solutions
                             that exceed client expectations while meeting tight deadlines. Seeking new challenges and opportunities to contribute expertise in software development, harnessing a blend of technical acumen and creative problem-solving to
                             propel projects to success.</p>
-
+                        <div v-if="isDownloadError" class="alert alert-primary alert-dismissible fade show" role="alert">
+                            <br>{{alerty.body}}
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                         <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
                         <button class="btn btn-primary rounded mt-3" @click="downloadDoc(2)" :disabled="isDownloading && buttonIndex == 2">DOWNLOAD CV <div v-if="isDownloading && buttonIndex == 2" class="spinner-border spinner-border-sm pr-2 " role="status">
   <span class="sr-only">Loading...</span>
 </div></button>
