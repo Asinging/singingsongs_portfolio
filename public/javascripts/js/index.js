@@ -100,7 +100,7 @@ let vm = new Vue({
                 .catch(err => {
                     console.log(err);
                     this.isDownloadError = true;
-                    this.alerty.body = 'Error downloading CV';
+                    this.alerty.title = 'Error downloading CV';
                     this.isDownloading = false;
                     console.error;
                 });
