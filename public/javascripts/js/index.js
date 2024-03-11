@@ -22,6 +22,16 @@ let vm = new Vue({
                     }, 5000);
                 }
             }
+        },
+        isDownloadError: {
+            immediate: true,
+            handler(val) {
+                if (val) {
+                    setTimeout(() => {
+                        this.isDownloadError = false;
+                    }, 300);
+                }
+            }
         }
     },
 
