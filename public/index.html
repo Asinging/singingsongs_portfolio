@@ -83,6 +83,7 @@
                             <div v-if="!isDownloading && buttonIndex == 2" class="spinner-border spinner-border-sm pr-2 " role="status">
   <span class="sr-only">Loading...</span>
 </div></button>
+                        <button class="btn btn-info rounded" @click="viewDoc(1)">VIEW CV</button>
                     </div>
 
                     <div class="socials mt-4">
@@ -146,6 +147,7 @@
                         <button class="btn btn-primary rounded mt-3" @click="downloadDoc(2)" :disabled="isDownloading && buttonIndex == 2">DOWNLOAD CV <div v-if="isDownloading && buttonIndex == 2" class="spinner-border spinner-border-sm pr-2 " role="status">
   <span class="sr-only">Loading...</span>
 </div></button>
+                        <button class="btn btn-info rounded mt-3" @click="viewDoc(2)">VIEW CV</button>
                     </div>
                 </div>
             </div>

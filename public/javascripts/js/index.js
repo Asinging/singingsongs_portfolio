@@ -104,6 +104,9 @@ let vm = new Vue({
                     this.isDownloading = false;
                     console.error;
                 });
+        },
+        viewDoc() {
+            window.open('/docs/viewPdf', '_blank');
         }
     }
 });

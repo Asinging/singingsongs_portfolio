@@ -20,16 +20,9 @@ module.exports = async emailObj => {
          rejectUnauthorized: false
       },
       auth: {
-         user: 'ejesunday@outlook.com',
-         pass: '@Singingsongs4199'
+         user: process.env.EMAIL_USER,
+         pass: process.env.EMAIL_PASS
       }
-
-      // auth: {
-      //     user: testAccount.user, // generated ethereal user
-      //     pass: testAccount.pass // generated ethereal password
-      // },
-      // debug: true, // show debug output
-      // logger: true // log information in console
    });
 
    try {
@@ -38,9 +31,9 @@ module.exports = async emailObj => {
       let info = await transporter.sendMail({
          from: emailObj.emailFrom, // sender address
          to: 'ejesunday@outlook.com,', // list of receivers
-         subject: `${emailObj.fullName} <br> ${emailObj.subject}`, // Subject line
+         subject: `${emailObj.fullName} - ${emailObj.subject}`, // Subject line
          text: emailObj.emailBody, // plain text body
-         html: `${emailObj.fullName} <br>Hello world?</b>` // html body
+         html: `<b>From:</b> ${emailObj.fullName} <br> <b>Message:</b> ${emailObj.emailBody}` // html body
       });
 
       console.log('Message sent: %s', info);
