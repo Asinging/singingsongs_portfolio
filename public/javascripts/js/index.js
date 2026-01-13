@@ -93,7 +93,7 @@ let vm = new Vue({
                     //   const url = window.URL.createObjectURL(response.data);
                     const link = document.createElement('a');
                     link.href = url;
-                    link.setAttribute('download', 'Singingsongs CV.pdf'); // or any other filename you want
+                    link.setAttribute('download', 'realCv.pdf'); // or any other filename you want
                     document.body.appendChild(link);
                     link.click();
                 })
@@ -104,6 +104,9 @@ let vm = new Vue({
                     this.alerty.title = 'Error downloading CV';
                     this.isDownloading = false;
                 });
+        },
+        viewDoc() {
+            window.open('/docs/viewPdf', '_blank');
         }
     }
 });
