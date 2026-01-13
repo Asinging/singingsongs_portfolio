@@ -29,6 +29,7 @@ let vm = new Vue({
                 if (val) {
                     setTimeout(() => {
                         this.isDownloadError = false;
+                        this.isDownloading = false;
                     }, 3000);
                 }
             }
@@ -73,7 +74,6 @@ let vm = new Vue({
                     this.emailSent = true;
                     this.alerty.title = 'Ouch!!!';
                     this.alerty.body = 'There was an error while sending email >>>';
-                    console.error(error);
                 });
         },
         downloadDoc(index) {
@@ -98,11 +98,11 @@ let vm = new Vue({
                     link.click();
                 })
                 .catch(err => {
+                    debugger;
                     console.log(err);
                     this.isDownloadError = true;
                     this.alerty.title = 'Error downloading CV';
                     this.isDownloading = false;
-                    console.error;
                 });
         }
     }

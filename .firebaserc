@@ -1,16 +1,5 @@
 {
-    "projects": {
-        "default": "singingsongsportfolio"
-    },
-    "targets": {
-        "singingsongsportfolio": {
-            "hosting": {
-
-                "singingsongs": [
-                    "singingsongsportfolio"
-                ]
-            }
-        }
-    },
-    "etags": {}
+  "projects": {
+    "default": "singingsongsportfolio"
+  }
 }
