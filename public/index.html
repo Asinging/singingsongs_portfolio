@@ -119,24 +119,25 @@
 
         <!-- About section -->
         <section id="about" class="section mt-3">
-            <div class="container mt-5">
-                  <div class="row text-center text-md-left">
+           <div class="container mt-5">
+                <div class="row text-center text-md-left">
                     <div class="col-md-3">
                         <img src="public_html/assets/imgs/2.jpg" alt="" class="img-thumbnail mb-4">
                     </div>
-                    <p class="pl-md-4 col-md-9">
+                    <div class="pl-md-4 col-md-9">
                         <h6 class="title">Sunday Eje Singingsongs</h6>
                         <p class="subtitle">Software Engineer !</p>
 
-                        <p>Results-driven Full-Stack Software Developer with extensive experience delivering high-quality, scalable web applications in fast-paced environments. </p>
+                        <p>Results-driven Full-Stack Software Developer with extensive experience delivering high-quality, scalable web applications in fast-paced environments. Proficient in leveraging modern technologies—including Next.js, React, Vue, Node.js, NestJS, PostgreSQL, AWS, and cloud-based architectures—to design and implement innovative solutions for e-commerce, fintech, and enterprise platforms. </p>
                             
-                    <p>Proficient in leveraging modern technologies—including Next.js, React, Vue, Node.js, NestJS, PostgreSQL, AWS, and cloud-based architectures—to design and implement innovative solutions for e-commerce, fintech, and enterprise platforms. Skilled in translating complex business requirements into efficient, maintainable code, building RESTful APIs, microservices, and performant front-end experiences.</p>
+                           <p> Skilled in translating complex business requirements into efficient, maintainable code, building RESTful APIs, microservices, and performant front-end experiences.</p>
 
-Demonstrated success leading cross-functional teams, mentoring developers, and driving projects from concept to production using Agile methodologies. Adept at optimizing system performance, enhancing user experience, and integrating emerging technologies such as AI and blockchain into practical software solutions. </p>
+<p>Demonstrated success leading cross-functional teams, mentoring developers, and driving projects from concept to production using Agile methodologies</p>. 
 
+<p>Adept at optimizing system performance, enhancing user experience, and integrating emerging technologies such as AI and blockchain into practical software solutions.</p> 
 <p>Passionate about continuous learning, problem-solving, and delivering software that exceeds client expectations while meeting tight deadlines.</p>
                         <div v-if="isDownloadError" class="alert alert-primary alert-dismissible fade show rounded" role="alert">
-                            <i>{{alerty.title}}</i>
+                            <br>{{alerty.title}}
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                          <span aria-hidden="true">&times;</span>
                         </button>
@@ -144,6 +145,7 @@ Demonstrated success leading cross-functional teams, mentoring developers, and d
                         <button class="btn btn-primary rounded mt-3" @click="downloadDoc(2)" :disabled="isDownloading && buttonIndex == 2">DOWNLOAD CV <div v-if="isDownloading && buttonIndex == 2" class="spinner-border spinner-border-sm pr-2 " role="status">
   <span class="sr-only">Loading...</span>
 </div></button>
+                        <button class="btn btn-info rounded mt-3" @click="viewDoc(2)">VIEW CV</button>
                     </div>
                 </div>
             </div>
