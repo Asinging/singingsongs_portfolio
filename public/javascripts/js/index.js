@@ -14,7 +14,7 @@ let vm = new Vue({
     },
     watch: {
         emailSent: {
-            immediate: true,
+            immediate: false,
             handler(val) {
                 if (val) {
                     setTimeout(() => {
@@ -24,7 +24,7 @@ let vm = new Vue({
             }
         },
         isDownloadError: {
-            immediate: true,
+            immediate: false,
             handler(val) {
                 if (val) {
                     setTimeout(() => {
